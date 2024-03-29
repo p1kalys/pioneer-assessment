@@ -14,6 +14,14 @@ app.set("trust proxy", true);
 app.use("/", rootRouter);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+app.get("/", (req, res) => {
+  res.send(`
+<div>          
+<h1> Pioneer Backend Assignment </h1>
+<p>An API ENDPOINT mechanism</p>
+</div>
+    `);
+});
 const connectToDB = () => {
   try {
     mongoose.connect(process.env.MONGO_URL);
