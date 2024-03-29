@@ -8,6 +8,7 @@ const { Web3 } = require("web3");
  * /ether/balance:
  *   get:
  *     summary: Retrieve Ethereum balance for a given address.
+ *     tags: [Ethereum Balance]
  *     parameters:
  *       - name: address
  *         in: query

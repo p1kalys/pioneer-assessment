@@ -22,6 +22,7 @@ const signInBody = zod.object({
  * /user/register:
  *   post:
  *     summary: Register a new user
+ *     tags: [Users]
  *     requestBody:
  *       required: true
  *       content:
